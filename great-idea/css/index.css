@@ -283,7 +283,10 @@ footer {
 }
 
 /* About page */
-
+#staff {
+  font-size: 40px;
+  text-align: center;
+}
 .svh .svh-img {
   display: flex;
   justify-content: space-between;
@@ -306,11 +309,13 @@ footer {
   border: 1px solid black;
   border-radius: 50px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.about-ball h2 {
-  text-align: center;
+.about-ball img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
 }
