@@ -208,13 +208,13 @@ nav a {
 .bottom-content {
   display: flex;
   margin: 40px 0;
-  border-bottom: 1px solid black;
 }
 .text-content {
   padding: 20px 10px;
 }
 
 .contact {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -227,4 +227,55 @@ footer {
   display: flex;
   justify-content: center;
   margin: 40px;
+}
+
+/* Service Page */
+
+.svh {
+  margin: 40px 0px;
+}
+
+.svh h1 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  width: 410px;
+  height: 225px;
+  background: grey;
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.box button {
+  background: white;
+  vertical-align: top;
+  margin-top: 20px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.box button:hover {
+  background: black;
+  color: white;
+}
+
+.btm-textcontent {
+  padding: 0 30px;
+}
+
+.btm-textcontent li {
+  margin: 10px;
 }
