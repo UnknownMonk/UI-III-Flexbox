@@ -3,64 +3,281 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+  width: 880px;
+  /* TB LR */
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: grey;
+}
+
+.cta {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta .cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 77px;
+  margin-top: 40px;
+  text-align: center;
+  padding: 0px 75px;
+}
+
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.top-content {
+  display: flex;
+  padding: 40px 0;
+
+  border-top: 1px solid black;
+}
+
+.bottom-content {
+  display: flex;
+  margin: 40px 0;
+}
+.text-content {
+  padding: 20px 10px;
+}
+
+.contact {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact p {
+  margin: 10px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+/* Service Page */
+
+.svh {
+  margin: 35px 0px;
+}
+
+.svh h1 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.main-content {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  width: 410px;
+  height: 225px;
+  background: grey;
+  margin: 30px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.box button {
+  background: white;
+  vertical-align: top;
+  margin-top: 20px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.box button:hover {
+  background: black;
+  color: white;
+}
+
+.btm-textcontent {
+  padding: 0 30px;
+}
+
+.btm-textcontent li {
+  margin: 10px;
+}
